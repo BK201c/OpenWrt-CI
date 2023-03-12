@@ -41,6 +41,7 @@ jobs:
           git clone https://github.com/openwrt/openwrt.git
           cd ./openwrt
           git checkout openwrt-22.03
+          cd ..
           cp .config ./openwrt/.config
           mv ./openwrt/* ./
       - name: Update feeds
