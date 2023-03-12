@@ -38,7 +38,8 @@ jobs:
           sudo -E apt-get clean
       - name: Download openwrt
         run: |
-          git clone https://github.com/openwrt/openwrt
+          git clone https://github.com/openwrt/openwrt.git
+          cd ./openwrt
           git checkout openwrt-22.03
           cp .config ./openwrt/.config
           mv ./openwrt/* ./
